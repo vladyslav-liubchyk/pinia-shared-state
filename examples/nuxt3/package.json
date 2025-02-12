@@ -1,5 +1,5 @@
 {
-  "name": "nuxt3",
+  "name": "nuxt-example",
   "private": true,
   "scripts": {
     "build": "nuxt build",
