@@ -1,7 +1,8 @@
 import type { MethodType } from 'broadcast-channel'
-import { BroadcastChannel as BroadcastChannelImpl } from 'broadcast-channel'
 import type { Store } from 'pinia'
-import { type Serializer, serialize } from './utils'
+import type { Serializer } from './utils'
+import { BroadcastChannel as BroadcastChannelImpl } from 'broadcast-channel'
+import { serialize } from './utils'
 
 export interface Options {
   initialize?: boolean
