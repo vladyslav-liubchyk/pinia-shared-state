@@ -42,10 +42,6 @@
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": ">=18",
-    "pnpm": ">=8.6.0"
-  },
   "scripts": {
     "build": "tsup",
     "dev": "pnpm build --watch --onSuccess=\"pnpm --filter vite dev\"",
@@ -56,20 +52,19 @@
     "lint:fix": "eslint . --fix"
   },
   "peerDependencies": {
-    "pinia": "^2"
+    "pinia": "^3.0.0"
   },
   "dependencies": {
-    "broadcast-channel": "^7.0.0",
-    "vue-demi": "^0.14.6"
+    "broadcast-channel": "^7.0.0"
   },
   "devDependencies": {
 		"@changesets/cli": "^2.27.12",
     "@antfu/eslint-config": "^2.4.5",
     "eslint": "^8.55.0",
-    "pinia": "^2.1.7",
-    "tsup": "^8.0.1",
+    "pinia": "^3.0.1",
+    "tsup": "^8.3.6",
     "typescript": "^5.3.2",
-    "vue": "^3.3.11"
+    "vue": "^3.5.11"
   },
   "packageManager": "pnpm@9.15.4"
 }
