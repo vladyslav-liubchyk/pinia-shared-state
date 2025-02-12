@@ -1,6 +1,6 @@
-import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { PiniaSharedState } from 'pinia-shared-state'
+import { createApp } from 'vue'
 import App from './App.vue'
 
 const app = createApp(App)
