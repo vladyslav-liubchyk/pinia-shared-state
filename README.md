@@ -6,12 +6,12 @@ Sync your Pinia state across browser tabs. Supports Vue 2 and 3.
 
 ## Requirements
 
-- vue ^2.6.14 || ^3.2.0
+- vue ^3.5.11
 
 ## Install
 
 ```sh
-pnpm add pinia pinia-shared-state
+npm install pinia-shared-state
 ```
 
 ## Usage
