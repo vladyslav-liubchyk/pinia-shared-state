@@ -48,7 +48,7 @@ export function share<T extends Store, K extends keyof T['$state']>(
       timestamp = Date.now()
       channel.postMessage({
         timestamp,
-        newValue: serialize(state, serializer)[key],
+        newValue: serialize(state, serializer)[key as number],
       })
     }
     externalUpdate = false
