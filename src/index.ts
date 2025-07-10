@@ -61,9 +61,11 @@ export function PiniaSharedState({
       externalUpdate = true
       timestamp = newState.timestamp
 
+      const deserializedState = serializer.deserialize(newState.serializedState);
+
       store.$patch((state) => {
         keysToUpdate.forEach((key) => {
-          state[key] = newState.state[key]
+          state[key] = deserializedState[key]
         })
       })
     }
